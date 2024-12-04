@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleservico.css">
+    <link rel="shortcut icon" href="img/logo1.ico" type="image/x-icon">
+    <title>EcoLife</title>
+</head>
+<body>
+    <div class="Tmenu">
+        <header>
+            <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
+            <h1>Eco Life</h1>
+            <h3>Consultoria ambiental, produtos recicláveis, e mais</h3>
+        </header>
+        <div class="Amenu">
+            <section class="menu">
+                <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="formulario.html">Formulário</a></li>
+                    <li><a class="grifo" href="servico.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <main>
+        <div class="carrousel">
+            <img src="img/img7.jpg" alt="">
+            <img src="img/img8.jpg" alt="">
+            <img src="img/img9.jpg" alt="">
+       </div>
+        <div class="conteudo">
+        <section class="servicos">
+        <h1>Serviços</h1>
+        <div class="consultoria">
+            <h3>Consultoria Ambiental</h3>
+            <ul>
+                <li>Avaliação de impactos ambientais</li>
+                <li>Planejamento de projetos sustentáveis</li>
+                <li>Implementação de práticas ecológicas em empresas</li>
+            </ul>
+        </div>
+        <div class="educacao">
+            <h3>Educação e Workshops</h3>
+            <ul>
+                <li>Cursos sobre sustentabilidade</li>
+                <li>Palestras sobre reciclagem e compostagem</li>
+                <li>Atividades educativas para escolas</li>
+            </ul>
+        </div>
+        <div class="certificacoes">
+            <h3>Assessoria em Certificações Ambientais</h3>
+            <ul>
+                <li>Auxílio para obter certificações como ISO 14001</li>
+                <li>Orientação sobre práticas de responsabilidade social</li>
+            </ul>
+        </div>
+        <div class="auditorias">
+            <h3>Auditorias Ambientais</h3>
+            <ul>
+                <li>Análise de conformidade com normas ambientais</li>
+                <li>Relatórios sobre eficiência energética</li>
+            </ul>
+        </div>
+        <div class="residuos">
+            <h3>Gestão de Resíduos</h3>
+            <ul>
+                <li>Planos de gerenciamento de resíduos</li>
+                <li>Programas de coleta seletiva</li>
+            </ul>
+        </div>
+        </section>
+        <section class="produtos">
+        
+            <h1>Produtos à Venda</h1>
+            <div class="produtos-reciclaveis">
+                <h3>Produtos Recicláveis</h3>
+                <ul>
+                    <li>Embalagens biodegradáveis</li>
+                    <li>Utensílios e acessórios feitos de materiais reciclados</li>
+                </ul>
+            </div>
+            <div class="uso-sustentavel">
+                <h3>Itens de Uso Sustentável</h3>
+                <ul>
+                    <li>Canudos de inox ou bambu</li>
+                    <li>Sacolas reutilizáveis</li>
+                </ul>
+            </div>
+            <div class="limpeza-ecologica">
+                <h3>Produtos de Limpeza Ecológicos</h3>
+                <ul>
+                    <li>Detergentes e desinfetantes à base de ingredientes naturais</li>
+                </ul>
+            </div>
+            <div class="kit-compostagem">
+                <h3>Kit de Compostagem</h3>
+                <ul>
+                    <li>Produtos para iniciar uma compostagem em casa</li>
+                </ul>
+            </div>
+            <div class="materiais-educativos">
+                <h3>Livros e Materiais Educativos</h3>
+                <ul>
+                    <li>Guias sobre práticas sustentáveis e vida ecológica</li>
+                </ul>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="contato.html">Eco Life</a></li>
+    </footer>
+    <script>
+        // JavaScript para o carrossel automático
+        const images = document.querySelectorAll('.carrousel img');
+        let currentImageIndex = 0;
+
+        images[currentImageIndex].classList.add('active');
+        
+        function changeImage() {
+            images[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].classList.add('active');
+        }
+
+        setInterval(changeImage, 3000); // Troca a imagem a cada 3 segundos
+    </script>
+</body>
+</html>

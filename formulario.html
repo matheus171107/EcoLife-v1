@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleformulario.css">
+    <link rel="shortcut icon" href="img/logo1.ico" type="image/x-icon">
+    <title>EcoLife</title>
+</head>
+<body>
+    <div class = "Tmenu">
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
+        <h1>Formulário</h1>
+        <h3>Consultoria ambiental, produtos recicláveis, e mais</h3>
+    </header>
+    <div class="Amenu">
+        <section class="menu">
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a class="grifo" href="formulario.html">Formulário</a></li>
+                <li><a href="servico.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </section>
+    </div>
+</div>
+    <main>
+        <div1>
+            <form >
+               <!-- <form action="" method="POST">-->
+
+   
+                <!-- Nome -->
+                        <label for="nome">Nome Completo:</label><br>
+                        
+                       
+                <input type="text" id="nome" name="nome" required> <br><br>
+                
+                
+                <!-- Email -->
+                        <label for="email">Email:</label><br>
+                        
+                 
+                <input type="email" id="email" name="email" required><br><br>
+                
+                        
+                
+                <!-- Telefone -->
+                        
+                        
+                <label for="telefone">Telefone:</label><br>
+                        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{11}" placeholder="(XX) XXXXX-XXXX" required><br><br>
+                       
+                
+                        <!-- Data -->
+                        <label for="data">Data de Nascimento:</label><br>
+                        <input type="date" id="data" name="data" required><br><br>
+                
+                        <!-- Gênero -->
+                <label for="genero">Gênero:</label><br>
+                        <select id="genero" name="genero" required>
+                            
+                     
+                <option value="">Selecione</option>
+                            
+                
+                <option value="masculino">Masculino</option>
+                 
+                <option value="feminino">Feminino</option>
+                            
+                         
+                </select>
+                                          
+                <!-- Botão de Enviar -->
+                <button type="submit">Enviar</button>
+            </form><br>
+
+                <img src="img/logo.png" alt="" class="logo1">
+
+        </div1>
+    </main>
+    <footer>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="contato.html">Eco Life</a></li>
+    </footer>
+</body>
+</html>
